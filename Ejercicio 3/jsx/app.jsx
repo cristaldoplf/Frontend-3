@@ -8,7 +8,13 @@ const span = create(
 const p = create(
     "p",
     { key: 1 },
-    ["Elemento Nuevo",span]
+    ["Elemento Nuevo", span]
 )
 
-ReactDOM.render(p,document.getElementById("root"))  
+ReactDOM.render(
+    [p, 
+    <div className="">
+        Hola Soy un div
+    </div>],
+    document.getElementById("root")
+)  
