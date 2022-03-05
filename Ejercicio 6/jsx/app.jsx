@@ -1,5 +1,4 @@
 function App() {
-    
     return (
         <div>
             <h1>Lista de Productos en stock:</h1>
@@ -18,13 +17,10 @@ function App() {
             </ul>
         </div>
     )
-    
 }
 
-const asd = 1
-
 ReactDOM.render(
-    <App/>,
+    <App />,
     document.querySelector("#root")
 )
 
