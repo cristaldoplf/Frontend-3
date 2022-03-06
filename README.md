@@ -12,4 +12,4 @@
 - 7- CRA - Create React App
 - 8- Componentes Funcionales
 - 9- React.Fragment
-- 10- Childre Props
+- 10- Children Props
