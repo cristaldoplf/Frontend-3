@@ -3,7 +3,7 @@ const Hijo = ({ fruta }) => <li>{fruta}</li>;
 const titulo = "Cajon"
 
 const Padre = () => {
-    const hijos = () => frutas.map((fruta) => <Hijo fruta={fruta} />);
+    const hijos = () => frutas.map((fruta,i) => <Hijo key={i} fruta={fruta} />);
     return (
         <div>
             <h1>{titulo}</h1>
@@ -14,7 +14,6 @@ const Padre = () => {
 
 ReactDOM.render(
     <Padre />,
-    document.querySelector("body")
+    document.querySelector("main")
 ) 
 
-console.log("asd")

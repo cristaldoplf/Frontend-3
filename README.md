@@ -10,3 +10,4 @@
 - 5- Creando elementos con jsx
 - 6- Creando elementos con jsx
 - 7- CRA - Create React App
+- 8- Componentes Funcionales
