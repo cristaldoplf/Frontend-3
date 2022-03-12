@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Paragraph from './components/Paragraph';
 import UlGenerator from './components/UlGenerator';
