@@ -1,4 +1,4 @@
-
+import React from "react";
 /*
 En un componente funcional usamos azucar sintactico, podemos hacer mas
 con menos codigo. No necesitamos extraer la clase Component de react.
