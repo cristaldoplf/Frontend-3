@@ -2,6 +2,8 @@ import './App.css';
 import Paragraph from './components/Paragraph';
 import UlGenerator from './components/UlGenerator';
 
+
+
 const invitedList = [
   {
       name: "Nicolás",
@@ -21,9 +23,11 @@ function App() {
   return (
     <div style={{borderStyle:"solid", width:"450px", marginLeft:"calc(50% - 225px)", marginTop:"100px"}} className="App">
       <Paragraph weight="bold" text="Invitados:" />
-      <UlGenerator array={invitedList} type="invitados"/>
+      <UlGenerator array={invitedList} type="invitados" >
+      </UlGenerator>
       <Paragraph weight="bold" text="Tareas:" />
-      <UlGenerator array={invitedList} type="tareas"/>
+      <UlGenerator array={invitedList} type="tareas">
+      </UlGenerator>
 
       
       
