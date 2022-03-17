@@ -26,26 +26,37 @@ class Principal extends React.Component{
         */
         
     }
+    //el estado solo se puede cambiar con setState, ya que es de solo lectura.
     cambiarColor(){
         this.setState({
             color:"blue",
             backgroundColor:"red",
-            padding:"30px"
+            padding:"30px",
+            textAlign:"right"
         })
     }
     /* siempre hay que tener un render para una clase. */
     render(){
         
         return(
-            /* opcion 1 */
-            <h2 onClick={this.cambiarColor} style={{color:this.state.color, backgroundColor:this.state.backgroundColor, padding:this.state.padding}}>Mi titulo h2</h2>
-            /* 
-            opcion 2 
-            <h2 onClick={()=>this.cambiarColor()} style={{color:this.state.color, backgroundColor:this.state.backgroundColor}}>Mi titulo h2</h2>
-            */
+            <React.Fragment>
+            <h2 onClick={this.cambiarColor} style={{textAlign:this.state.textAlign, color:this.state.color, backgroundColor:this.state.backgroundColor, padding:this.state.padding}}>Mi titulo h2</h2>
+            {this.props.datos.map((item,index)=>{
+                return(
+                    <p key={index.toString()}>{item.name}</p>
+                )
+            })}
+            </React.Fragment>
+
             
         )
     }
 }
+/* opcion 1
+ <h2 onClick={this.cambiarColor} style={{textAlign:this.state.textAlign, color:this.state.color, backgroundColor:this.state.backgroundColor, padding:this.state.padding}}>Mi titulo h2</h2>
+
+opcion 2 
+ <h2 onClick={()=>this.cambiarColor()} style={{color:this.state.color, backgroundColor:this.state.backgroundColor}}>Mi titulo h2</h2>
+*/
 
 export default Principal;
