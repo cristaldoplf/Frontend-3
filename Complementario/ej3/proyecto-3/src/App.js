@@ -2,6 +2,7 @@ import './App.css';
 import Propiedades from './components/Propiedades';
 import Componente from './components/Componente';
 import Estado from './components/Estado';
+import RenderizadoCondicional from './components/RenderizadoCondicional';
 
 function App() {
   return (
@@ -19,7 +20,10 @@ function App() {
       funcion={num => num*num}
       componenteReact={<Componente msg="Soy un componente pasado como Prop"/>}
       />
+      <hr/>
       <Estado/>
+      <hr/>
+      <RenderizadoCondicional/>
     </div>
   );
 }
