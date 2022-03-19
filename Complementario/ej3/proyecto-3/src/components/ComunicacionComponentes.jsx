@@ -8,9 +8,9 @@ export default class Padre extends Component {
     contador: 0,
   }
 
-  incrementarContador= (e) =>{
+  incrementarContador = (e) => {
     this.setState({
-      contador:this.state.contador+1,
+      contador: this.state.contador + 1,
     })
   }
 
@@ -31,9 +31,9 @@ export default class Padre extends Component {
 // el cambio en el estado de esta clase puede observarse con el react tools inspeccionando al padre.
 function Hijo(props) {
   return (
-  <>
-  <h2>{props.mensaje}</h2>
-  <button onClick={props.incrementarContador}>+</button>
-  </>
+    <>
+      <h2>{props.mensaje}</h2>
+      <button onClick={props.incrementarContador}>+</button>
+    </>
   )
 }

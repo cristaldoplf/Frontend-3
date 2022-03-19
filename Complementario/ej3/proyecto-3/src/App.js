@@ -7,6 +7,7 @@ import EventosES6  from './components/Eventos/EventosES6';
 import EventosES7 from './components/Eventos/EventosES7';
 import MasSobreEventos from './components/Eventos/EventosDiferentes';
 import ComunicacionComponente from "./components/ComunicacionComponentes";
+import CicloVida from './components/CicloVida';
 
 function App() {
   return (
@@ -36,6 +37,8 @@ function App() {
       <MasSobreEventos/>
       <hr/>
       <ComunicacionComponente/>
+      <hr/>
+      <CicloVida/>
 
       
     </div>
