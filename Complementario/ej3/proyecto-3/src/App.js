@@ -1,10 +1,12 @@
 import './App.css';
-import Propiedades from './components/Propiedades';
-import Componente from './components/Componente';
-import Estado from './components/Estado';
-import RenderizadoCondicional from './components/RenderizadoCondicional';
-import EventosES6  from './components/EventosES6';
-import EventosES7 from './components/EventosES7';
+import Propiedades from './components/Basico/Propiedades';
+import Componente from './components/Basico/Componente';
+import Estado from './components/Basico/Estado';
+import RenderizadoCondicional from './components/Basico/RenderizadoCondicional';
+import EventosES6  from './components/Eventos/EventosES6';
+import EventosES7 from './components/Eventos/EventosES7';
+import MasSobreEventos from './components/Eventos/EventosDiferentes';
+import ComunicacionComponente from "./components/ComunicacionComponentes";
 
 function App() {
   return (
@@ -30,6 +32,11 @@ function App() {
       <EventosES6/>
       <hr/>
       <EventosES7/>
+      <hr/>
+      <MasSobreEventos/>
+      <hr/>
+      <ComunicacionComponente/>
+
       
     </div>
   );
