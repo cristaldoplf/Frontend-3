@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-export default class Eventos extends Component {
+export default class EventosES6 extends Component {
     constructor(props) {
         super(props)
         this.state = {
@@ -30,7 +30,7 @@ export default class Eventos extends Component {
     render() {
         return (
             <div>
-                <h2>Eventos en componentes de Clase</h2>
+                <h2>Eventos en componentes de Clase de ECMAScript 6</h2>
                 <nav>
                     <button onClick={this.sumar}>+</button>
                     <button onClick={this.restar}>-</button>

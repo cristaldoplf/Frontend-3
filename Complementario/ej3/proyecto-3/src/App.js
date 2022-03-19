@@ -3,7 +3,9 @@ import Propiedades from './components/Propiedades';
 import Componente from './components/Componente';
 import Estado from './components/Estado';
 import RenderizadoCondicional from './components/RenderizadoCondicional';
-import Eventos from './components/Eventos';
+import EventosES6  from './components/EventosES6';
+import EventosES7 from './components/EventosES7';
+
 function App() {
   return (
     <div className="App">
@@ -25,7 +27,10 @@ function App() {
       <hr/>
       <RenderizadoCondicional/>
       <hr/>
-      <Eventos/>
+      <EventosES6/>
+      <hr/>
+      <EventosES7/>
+      
     </div>
   );
 }
