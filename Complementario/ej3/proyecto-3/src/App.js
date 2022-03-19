@@ -3,7 +3,7 @@ import Propiedades from './components/Propiedades';
 import Componente from './components/Componente';
 import Estado from './components/Estado';
 import RenderizadoCondicional from './components/RenderizadoCondicional';
-
+import Eventos from './components/Eventos';
 function App() {
   return (
     <div className="App">
@@ -24,6 +24,8 @@ function App() {
       <Estado/>
       <hr/>
       <RenderizadoCondicional/>
+      <hr/>
+      <Eventos/>
     </div>
   );
 }
