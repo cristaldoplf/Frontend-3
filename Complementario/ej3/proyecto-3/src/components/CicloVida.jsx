@@ -28,7 +28,7 @@ export default class CicloVida extends Component {
       hora: new Date().toLocaleTimeString(),
       visible:false ,
     }
-
+ 
     this.temporizador = null;
   }
 
