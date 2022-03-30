@@ -13,3 +13,15 @@
 - 8- Componentes Funcionales
 - 9- React.Fragment
 - 10- Children Props
+- 11- ~~
+- 12- Style inLine
+- 13- Key
+- 14- Children Father
+- 15- Componente de clase
+- 16- Metodos/Eventos
+- 17- Metodos/Eventos
+- 18- Repaso de lo anterior
+- 19- Ciclo de vida
+- 20- Ciclo de vida
+- 21-
+- 22-
