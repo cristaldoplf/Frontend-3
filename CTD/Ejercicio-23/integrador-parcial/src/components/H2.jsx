@@ -7,7 +7,7 @@ const H2 = (props) => {
   const text = json.filter(item => item.id === id)
   
   return(
-    <h2>{option ===  "A" ? text[0].opciones.a : text[0].opciones.b  }</h2>
+    <h2 id={props.id}>{option ===  "A" ? text[0].opciones.a : text[0].opciones.b  }</h2>
   )
 }
 
