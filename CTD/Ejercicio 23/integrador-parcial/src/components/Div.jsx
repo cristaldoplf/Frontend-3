@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import data from "./data.json"
+import json from "./data.json"
 import Button from "./Button";
 import H1 from "./H1";
 import H2 from "./H2";
@@ -12,22 +12,38 @@ class Div extends Component {
     super(props)
 
     this.state = {
-      data: data,
-      text: data[0].historia,
-      choiceA: data[0].opciones.a,
-      choiceB: data[0].opciones.b,
-      contador: 0,
+      data: json,
+      textId: "1",
+      contador: 2,
       selection: "",
       prevSelection: "",
       historial:[]
     }
 
-    this.selection=this.selection.bind(this)
-    this.updateChoice=this.updateChoice.bind(this)
+    /* this.selection=this.selection.bind(this)
+    this.updateChoice=this.updateChoice.bind(this) */
 
   }
 
-  componentDidMount(){
+
+  handleSubmit = (opcion) => {
+    console.log()
+    if(this.state.contador ===6){
+      alert("Fin")
+    }else{
+      this.setState({
+        textId:this.state.contador+(opcion.toLowerCase()),
+        contador:this.state.contador+1,
+        selection: opcion,
+        prevSelection: opcion,
+        historial: this.state.contador > 2 ? [...this.state.historial,this.state.selection] : []
+      })
+    }
+      
+  }
+
+
+ /*  componentDidMount(){
     
   }
 
@@ -158,20 +174,20 @@ class Div extends Component {
       choiceA: data[this.state.contador].opciones.a,
       choiceB: data[this.state.contador].opciones.b
     })
-  }
+  } */
 
   render() {
     return (
       <div className='layout'>
-        <H1 text={this.state.text} />
+        <H1 textId={this.state.textId} data={this.state.data} />
         <div className="opciones">
           <div className="opcion">
-            <Button id="A" text="A" changeSelection={this.selection}/>
-            <H2 text={this.state.choiceA} />
+            <Button id="A" text="A" changeSelection={this.handleSubmit}/>
+            <H2 option="A" textId={this.state.textId} data={this.state.data}/>
           </div>
           <div className="opcion">
-            <Button id="B" text="B" changeSelection={this.selection} />
-            <H2 text={this.state.choiceB} />
+            <Button id="B" text="B" changeSelection={this.handleSubmit} />
+            <H2 option="B" textId={this.state.textId}  data={this.state.data}/>
           </div>
         </div>
         <div className="recordatorio">
