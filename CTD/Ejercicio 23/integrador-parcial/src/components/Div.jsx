@@ -20,9 +20,6 @@ class Div extends Component {
       historial:[]
     }
 
-    /* this.selection=this.selection.bind(this)
-    this.updateChoice=this.updateChoice.bind(this) */
-
   }
 
 
@@ -42,7 +39,8 @@ class Div extends Component {
       
   }
 
-
+//! problemas con la cola de espera en la cual pone React pone los cambios de setState hasta que termine toda la ejecucion del bloque, 
+//! termine refactorizando todo despues de entender como funcionaban los tiempos en los cuales los cambios se hacen efectivos.
  /*  componentDidMount(){
     
   }
@@ -56,18 +54,6 @@ class Div extends Component {
     })
     
     this.updateHistory()
-  }
-
-  componentDidMount(){
-    
-  }
-
-  componentDidUpdate(prevProps, prevState){
-     
-  }
-
-  componentWillUnmount(){
-    
   }
 
   updateHistory = () => {
