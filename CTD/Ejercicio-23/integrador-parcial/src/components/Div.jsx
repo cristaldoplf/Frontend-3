@@ -6,6 +6,7 @@ import H2 from "./H2";
 import H3 from "./H3";
 import H4 from "./H4";
 import Ul from './Ul';
+import Swal from "sweetalert2";
 
 class Div extends Component {
   constructor(props) {
@@ -22,11 +23,15 @@ class Div extends Component {
 
   }
 
+  componentDidMount(){
+    Swal.fire({  title: 'Esta es tu historia!',   text: 'Selecciona tu camino.',   imageUrl: 'https://megara.com.ar/wp-content/uploads/2016/10/95526_elige2.jpg',   imageWidth: 400,   imageHeight: 200,   imageAlt: 'Coleccion Libros', })
+  }
+
 
   handleSubmit = (opcion) => {
     console.log()
     if(this.state.contador ===6){
-      alert("Fin")
+      Swal.fire({  title: 'Este es el fin de tu historia!',   text: 'Recarga la pagina para volver a participar.',   imageUrl: 'https://images.squarespace-cdn.com/content/v1/5148b380e4b0106646129f8e/1522084909209-TJI0W8WIM24Z75M31GSN/el-fin-de-la-historia+1477.jpg',   imageWidth: 400,   imageHeight: 200,   imageAlt: 'Coleccion Libros', })
     }else{
       this.setState({
         textId:this.state.contador+(opcion.toLowerCase()),
@@ -36,7 +41,6 @@ class Div extends Component {
         historial: this.state.contador > 2 ? [...this.state.historial,this.state.selection] : []
       })
     }
-      
   }
 
 //! problemas con la cola de espera en la cual pone React pone los cambios de setState hasta que termine toda la ejecucion del bloque, 
