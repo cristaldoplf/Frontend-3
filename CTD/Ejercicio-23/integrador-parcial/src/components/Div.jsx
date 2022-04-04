@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import json from "./data.json"
+import json from "../DB/data.json"
 import Button from "./Button";
 import H1 from "./H1";
 import H2 from "./H2";
