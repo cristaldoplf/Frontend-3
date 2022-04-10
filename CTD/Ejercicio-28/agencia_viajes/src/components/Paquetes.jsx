@@ -3,15 +3,10 @@ import Card from "./Card";
 const Paquetes = (props) => {
   // props.data.map(item => console.log(item.nombre))
   return (
-    <div>
+    <div className="row d-flex justify-content-center">
+      <h2>Paquetes</h2>
       {props.data.map((item, i) => {
-        return (
-          <div key={i.toString()+"as"}>
-            <h2>Paquetes</h2>
-            <Card data={item} key={i.toString() + "p"} />
-          </div>
-        )
-
+        return (<Card data={item} key={i.toString() + "p"} />)
       })}
     </div>
   )
