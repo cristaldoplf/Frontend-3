@@ -5,7 +5,7 @@ export default function ScrollHooks() {
 
   useEffect(() => {
     //funciona como componentDidMount
-    console.log("fase de montaje")
+    /* console.log("fase de montaje") */
     const detectarScroll = () => setScrollY(window.pageYOffset)
     window.addEventListener("scroll", detectarScroll)
   })
@@ -13,20 +13,20 @@ export default function ScrollHooks() {
   //este useEffect se ejecuta cada vez que la variable
   //dentro del segundo parametro cambie.
   useEffect(() => {
-    console.log("moviendo scroll / fase de actualizacion")
+    /* console.log("moviendo scroll / fase de actualizacion") */
   }, [scrollY])
 
   //este useEffect se ejecuta cada vez que se desmonte el componente
   //dejando vacio el segundo parametro
   useEffect(() => {
-    console.log("fase montaje")
+    /* console.log("fase montaje") */
 
   }, [])
 
   //cuando el componente se desmonte, se ejecutara la arrow function
   useEffect(() => {
     return () => {
-      console.log("fase desmontaje")
+      /* console.log("fase desmontaje") */
     }
   })
 

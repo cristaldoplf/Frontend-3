@@ -15,12 +15,19 @@ export default class Estado extends Component {
             contador: 0,
         }
 
-        setInterval(() => {
-            this.setState({
-                contador: this.state.contador + 1
-            })
-        }, 1000)
+        
     }
+
+    //ciclo de vida es de varios ejercicios posteriores, pero lo agregue para que no
+    //me marque por consola que es una mala practica usar un setState antes de inicializar
+    //un componente.
+    componentDidMount(){
+      setInterval(() => {
+      this.setState({
+          contador: this.state.contador + 1
+      })
+  }, 1000)}
+
     render() {
         return (
             <div>

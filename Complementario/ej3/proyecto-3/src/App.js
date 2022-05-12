@@ -12,6 +12,7 @@ import AjaxApis from './components/AjaxApis';
 import ContadorHooks from './components/Hooks/ContadorHooks';
 import ScrollHooks from './components/Hooks/ScrollHooks';
 import AjaxHooks from './components/Hooks/AjaxHooks';
+import HooksPersonalizados from './components/Hooks/HooksPersonalizados';
 
 
 function App() {
@@ -52,6 +53,8 @@ function App() {
       <ScrollHooks/>
       <hr/>
       <AjaxHooks/>
+      <hr/>
+      <HooksPersonalizados/>
       
     </div>
   );
