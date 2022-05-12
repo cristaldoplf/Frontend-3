@@ -16,15 +16,16 @@ export default class AjaxApis extends Component {
 
   componentDidMount() {
     let url = "https://pokeapi.co/api/v2/pokemon"
+
     fetch(url)
       .then(response => response.json())
       .then(json => {
-        console.log(json)
+        /* console.log(json) */
         json.results.forEach((element) => {
           fetch(element.url)
             .then(response => response.json())
             .then(json => {
-              console.log(json)
+              /* console.log(json) */
               let pokemon = {
                 id: json.id,
                 name: json.name,

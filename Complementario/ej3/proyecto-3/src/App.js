@@ -9,6 +9,10 @@ import MasSobreEventos from './components/Eventos/EventosDiferentes';
 import ComunicacionComponente from "./components/ComunicacionComponentes";
 import CicloVida from './components/CicloVida';
 import AjaxApis from './components/AjaxApis';
+import ContadorHooks from './components/Hooks/ContadorHooks';
+import ScrollHooks from './components/Hooks/ScrollHooks';
+import AjaxHooks from './components/Hooks/AjaxHooks';
+
 
 function App() {
   return (
@@ -42,7 +46,12 @@ function App() {
       <CicloVida/>
       <hr/>
       <AjaxApis/>
-
+      <hr/>
+      <ContadorHooks titulo="Seguidores"/>
+      <hr/>
+      <ScrollHooks/>
+      <hr/>
+      <AjaxHooks/>
       
     </div>
   );
