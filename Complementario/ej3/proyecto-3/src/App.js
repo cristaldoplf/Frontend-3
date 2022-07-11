@@ -13,12 +13,15 @@ import ContadorHooks from './components/Hooks/ContadorHooks';
 import ScrollHooks from './components/Hooks/ScrollHooks';
 import AjaxHooks from './components/Hooks/AjaxHooks';
 import HooksPersonalizados from './components/Hooks/HooksPersonalizados';
+import Referencias from './components/Referencias';
+import Fromularios from './components/Formularios';
+import ContactForm from './components/ContactForm';
 
 
 function App() {
   return (
     <div className="App">
-      <Componente msg="Hola soy un componente funcional expresado desde una prop"/>
+      {/* <Componente msg="Hola soy un componente funcional expresado desde una prop"/>
       <hr/>
       <Propiedades 
       defecto="Las Props" 
@@ -55,7 +58,23 @@ function App() {
       <AjaxHooks/>
       <hr/>
       <HooksPersonalizados/>
+      <hr/>
+      <Referencias/>
+      <hr/>
+      <Fromularios/>
       
+      <hr/> */}
+      <ContactForm/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      
+    
     </div>
   );
 }
